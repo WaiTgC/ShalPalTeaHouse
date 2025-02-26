@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff4e3;
+    border-bottom: 1px solid black;
+    
+}
+
+.leftlogo  i{
+    font-size: 30px;
+    padding: 5px 20px;
+    color: #515151;
+    text-decoration: none;
+    border: none;
+    
+}
+.leftlogo{
+    overflow-y: hidden;
+}
+
+.rightlogo i{
+    font-size: 28px;
+    margin-right: 15px;
+    color: #515151;
+    
+}
