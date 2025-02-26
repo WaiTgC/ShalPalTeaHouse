@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="navbar">
-        <ul className="nav nav-pills mb-3">
+        <ul className="nav nav-pills ">
           <li className="nav-item">
             <Link
               to="/PoppicksPage"
