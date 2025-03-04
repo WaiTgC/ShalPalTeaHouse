@@ -45,6 +45,10 @@ button.combo {
   padding: 15px 50px;
   text-decoration: none;
 }
+link.today,
+link.combo {
+  text-decoration: none;
+}
 
 @media (max-width: 480px) {
   .footer {
@@ -83,8 +87,14 @@ button.combo {
   button.today {
     padding: 0px 40px !important;
     margin-right: 10px !important;
+    text-decoration: none;
   }
   button.combo {
     padding: 0px 51px !important;
+    text-decoration: none;
+  }
+  link.today,
+  link.combo {
+    text-decoration: none;
   }
 }

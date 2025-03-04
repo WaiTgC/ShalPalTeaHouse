@@ -39,14 +39,14 @@ const AddCart = () => {
               </div>
               <div className="cart-controls">
                 <button
-                  className="button_1"
+                  className="button_3"
                   onClick={() => updateCartItem(item._id, item.count - 1)}
                 >
                   -
                 </button>
                 <span className="item-count">{item.count}</span>
                 <button
-                  className="button_2"
+                  className="button_4"
                   onClick={() => updateCartItem(item._id, item.count + 1)}
                 >
                   +
