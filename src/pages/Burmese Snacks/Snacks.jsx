@@ -4,6 +4,8 @@ import Header from "../../components/header/Header";
 import Logobar from "../../components/Logobar/Logobar";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Contact from "../../components/Contact/Contact";
+import Cart from "../../components/Cart/Cart";
 
 const Snacks = () => {
   return (
@@ -15,7 +17,9 @@ const Snacks = () => {
         <>
           <h1>Snacks</h1>
         </>
+        <Cart />
         <Footer />
+        <Contact />
       </div>
     </div>
   );

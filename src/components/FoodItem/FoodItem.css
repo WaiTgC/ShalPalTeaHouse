@@ -1,0 +1,107 @@
+.foodItem {
+  font-family: "M PLUS 1p", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  background-color: #f7ead4;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  cursor: pointer;
+  user-select: none; /* Prevents text selection */
+  outline: none; /* Removes default focus outline */
+}
+
+.foodItem:hover {
+  filter: brightness(0.98);
+}
+
+.foodimgcontainer img {
+  width: 80px;
+  height: auto;
+}
+
+.foodinfo {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.foodinfo .name-decription p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.foodinfo .name-decription span {
+  font-size: 10px;
+  color: #333;
+  margin: 0;
+}
+
+.price-addtocart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-top: 10px;
+}
+
+.foodprice p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.addtocartbutton a {
+  color: black;
+  text-decoration: none;
+}
+
+.addtocartbutton i {
+  font-size: 25px;
+}
+
+.addtocartbutton a:hover {
+  color: white;
+}
+
+.price-addtocart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-addtocart button {
+  border: none;
+  background-color: transparent;
+  border-radius: 500%;
+  width: 30px;
+  color: black;
+  font-size: 16px;
+}
+.price-addtocart i:active {
+  background-color: black;
+  color: black;
+  border-radius: 180px;
+}
+.price-addtocart i {
+  font-size: 20px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .foodItem {
+    margin-top: 10px;
+    margin-bottom: 0px !important;
+    padding: 0px 20px !important;
+    max-width: 380px !important;
+    margin-bottom: 30px;
+  }
+
+  .foodimgcontainer img {
+    width: 65px;
+    margin: 10px 0px;
+    display: flex;
+  }
+}

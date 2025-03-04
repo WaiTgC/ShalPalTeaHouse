@@ -14,6 +14,7 @@
 }
 .footer-content {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-top: 20px;
   margin-right: 20px;
@@ -43,100 +44,45 @@ button.combo {
   padding: 15px 50px;
 }
 
-.social-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 40px;
-}
-
-.social-contact p {
-  margin-right: 10px;
-  color: #333;
-}
-
-.social-contact .ig,
-.social-contact .fb {
-  font-size: 2rem;
-  color: #333;
-  transition: 0.5s;
-  margin-right: 10px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.social .a:hover {
-  filter: brightness(1.4);
-}
 @media (max-width: 480px) {
   .footer {
     display: flex !important;
     flex-direction: column !important ;
-    height: 100px !important;
+    height: 110px !important;
+    margin-top: 0px;
   }
   .footer-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     overflow-y: hidden;
+    margin-top: 0px;
+    padding: 15px 0px;
+    margin: 0px;
   }
 
   .footer-content button {
     position: relative;
     border-radius: 30px !important;
-    height: 35px;
+    height: 46px;
     width: 100%;
-    font-size: clamp(1px, 2vw, 100px);
+    font-size: clamp(10px, 2vw, 100px);
     white-space: nowrap;
     margin: 0px 10px;
   }
   .footer-content a {
+    align-items: center;
     display: flex;
     text-decoration: none;
     overflow-y: hidden;
     height: 60px;
-    margin-left: 10px;
+    margin-right: -4px;
   }
   button.today {
     padding: 0px 40px !important;
-    margin-left: 28px !important;
+    margin-right: 10px !important;
   }
   button.combo {
     padding: 0px 51px !important;
-  }
-
-  .social-contact {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    color: #333;
-    position: relative;
-    left: 35px;
-    transform: scale(0.6);
-    overflow-y: hidden;
-  }
-
-  .social-contact p {
-    font-size: 12px;
-    margin: 0px;
-  }
-
-  .social-contact a {
-    font-size: 16px;
-    text-decoration: none;
-    color: #333;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transform: scale(0.7);
-  }
-  .social-contact p {
-    position: relative;
-  }
-
-  .social-contact .ig {
-    position: relative;
-  }
-  .social-contact .fb {
-    position: relative;
-    right: 30px;
   }
 }

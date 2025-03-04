@@ -8,6 +8,9 @@
   justify-content: space-around;
   scrollbar-width: none; /* ✅ Hide scrollbar for Firefox */
   -ms-overflow-style: none; /* ✅ Hide scrollbar for IE and Edge */
+  cursor: pointer;
+  user-select: none; /* Prevents text selection */
+  outline: none; /* Removes default focus outline */
 }
 
 .navbar-container::-webkit-scrollbar {
