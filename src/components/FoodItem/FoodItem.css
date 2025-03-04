@@ -54,19 +54,6 @@
   margin-bottom: 5px;
 }
 
-.addtocartbutton a {
-  color: black;
-  text-decoration: none;
-}
-
-.addtocartbutton i {
-  font-size: 25px;
-}
-
-.addtocartbutton a:hover {
-  color: white;
-}
-
 .price-addtocart {
   display: flex;
   align-items: center;
@@ -82,7 +69,8 @@
 }
 .price-addtocart i:active {
   background-color: black;
-  color: black;
+  opacity: 0.4;
+  color: #fff4e3;
   border-radius: 180px;
 }
 .price-addtocart i {

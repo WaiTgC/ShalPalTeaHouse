@@ -22,9 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  border: 1px solid #ccc;
-
+  border: none;
   background-color: #fff4e3;
   cursor: pointer;
   user-select: none; /* Prevents text selection */
@@ -65,7 +63,7 @@ p.cart-item-price {
   white-space: nowrap;
 }
 .item-count {
-  background-color: #f0dfc6;
+  background-color: #fff4e3;
   padding: 0px 10px 0px 10px;
 }
 .cart-controls {
@@ -74,30 +72,26 @@ p.cart-item-price {
   justify-content: center;
   padding-right: 20px;
 }
-.button_1 {
+button.button_1,
+button.button_2 {
   border: none;
   overflow-y: hidden;
-  width: 24px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   user-select: none; /* Prevents text selection */
   outline: none;
   background-color: #fff4e3;
+  margin: 10px 10px;
 }
-.button_2 {
-  border: none;
-  overflow-y: hidden;
-  width: 24px;
-  cursor: pointer;
-  user-select: none; /* Prevents text selection */
-  outline: none;
-  background-color: #fff4e3;
-}
+
 .cart-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 50px;
 }
-.order-button {
+button.order-button {
   color: #000;
   font-family: poppins;
   font-weight: 500;
