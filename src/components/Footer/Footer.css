@@ -11,6 +11,7 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8),
     inset 0 -2px 5px rgba(255, 255, 255, 0.9);
   border-radius: 10px;
+  text-decoration: none;
 }
 .footer-content {
   display: flex;
@@ -75,6 +76,7 @@ link.combo {
     font-size: clamp(10px, 2vw, 100px);
     white-space: nowrap;
     margin: 0px 10px;
+    text-decoration: none;
   }
   .footer-content a {
     align-items: center;
@@ -83,6 +85,7 @@ link.combo {
     overflow-y: hidden;
     height: 60px;
     margin-right: -4px;
+    text-decoration: none;
   }
   button.today {
     padding: 0px 40px !important;
