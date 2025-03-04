@@ -14,7 +14,7 @@ const CheckOut = () => {
       <div className="checkout-container">
         <img src={assets.ordercompleted} alt="checkout" />
         <button className="button_1">Order Completed</button>
-        <Link className="button-2" to={"/PoppicksPage"}>
+        <Link className="linktomain" to={"/PoppicksPage"}>
           <button className="button_2">Order More </button>
         </Link>
         <p>Order No: 00001</p>
