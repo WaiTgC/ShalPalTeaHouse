@@ -218,7 +218,7 @@ export const food_list = [
     _id: "22",
     name: "Set C",
     image: set_C,
-    price: "220 B",
+    price: "220import B",
     description: "",
     category: "Combo's Sets",
   },

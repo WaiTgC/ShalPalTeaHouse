@@ -9,8 +9,6 @@ import Cart from "../../components/Cart/Cart";
 import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
 const PoppicksPage = () => {
-  const [category, setCategory] = useState("All");
-
   return (
     <div className="pp-Page">
       <Header />
