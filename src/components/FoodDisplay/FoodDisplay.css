@@ -1,0 +1,15 @@
+.foodDisplaylist {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically (if needed) */
+  width: 100%;
+
+  padding-bottom: 200px;
+  background-color: #fff4e3;
+}
+@media (max-width: 480px) {
+  .foodDisplaylist {
+    padding-bottom: 120px !important;
+  }
+}
