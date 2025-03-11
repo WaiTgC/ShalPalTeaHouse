@@ -78,3 +78,12 @@
     padding: 0px;
   }
 }
+
+@media (max-width: 390px) {
+  .contact img {
+    margin-top: 5px;
+    width: 80%;
+    margin-bottom: 2px;
+    padding: 0px 10px;
+  }
+}
