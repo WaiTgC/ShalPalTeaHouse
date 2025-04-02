@@ -1,41 +1,64 @@
 .foodItem {
-  font-family: "M PLUS 1p", sans-serif;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-  width: 100%;
+  flex-direction: column;
+  margin-top: 15px !important;
   background-color: #f7ead4;
   padding: 10px 20px;
   border-radius: 10px;
-  width: 90%;
+  width: 412px;
   max-width: 700px;
-  cursor: pointer;
-  user-select: none; /* Prevents text selection */
-  outline: none; /* Removes default focus outline */
+  min-height: 127px;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f7ead4;
 }
 
 .foodItem:hover {
   filter: brightness(0.98);
 }
+.foodItem-card {
+  position: relative;
+  top: 10px;
+  font-family: "M PLUS 1p", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.foodimgcontainer {
+  display: inline-block;
+}
 
 .foodimgcontainer img {
-  width: 80px;
-  height: auto;
+  width: 80px !important;
+  height: 80px;
 }
 
 .foodinfo {
+  font-weight: 500;
+  display: inline-block;
   text-align: center;
   flex-grow: 1;
+  position: relative;
+  bottom: 15px;
+  overflow-y: hidden;
+  left: 5px;
 }
 
-.foodinfo .name-decription p {
+.foodinfo p {
   font-size: 16px;
-  margin: 5px 0;
+  font-weight: 500;
+  font-family: M PLUS 1p, sans-serif;
+  margin: 0;
 }
 
-.foodinfo .name-decription span {
-  font-size: 10px;
+.foodinfo span {
+  font-size: 16px;
+  font-family: Myanmar Text, sans-serif;
+  font-weight: 500;
   color: #333;
   margin: 0;
 }
@@ -46,26 +69,26 @@
   align-items: center;
   gap: 0px;
   margin-top: 10px;
+  position: relative;
+  bottom: 15px;
+  width: 50px;
 }
 
-.foodprice p {
-  font-size: 16px;
-  font-weight: 700;
+.price-addtocart p {
+  font-size: 14px;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
-.price-addtocart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .price-addtocart button {
   border: none;
   background-color: transparent;
   border-radius: 500%;
   width: 30px;
+  height: 30px;
   color: black;
   font-size: 16px;
+  overflow-y: hidden;
 }
 .price-addtocart i:active {
   background-color: black;
@@ -77,12 +100,34 @@
   font-size: 20px !important;
 }
 
+.fooditem-checkbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px 0;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 500;
+  width: 70%;
+
+  position: relative;
+  bottom: 30px;
+  left: 100px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between checkbox and text */
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 480px) {
   .foodItem {
-    margin-top: 10px;
     margin-bottom: 0px !important;
     padding: 0px 20px !important;
+
     max-width: 380px !important;
     margin-bottom: 30px;
   }

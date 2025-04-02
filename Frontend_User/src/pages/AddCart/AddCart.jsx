@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { StoreContext } from "../../context/StoreContextProvider";
 import "./AddCart.css";
 import Header from "../../components/header/Header";
@@ -8,14 +8,15 @@ import { Link } from "react-router-dom";
 
 const AddCart = () => {
   const { cart, updateCartItem } = useContext(StoreContext);
+
   useEffect(() => {
-    console.log("Updated Cart:", cart);
+    console.log("Updated Cart:", cart); // Debugging cart updates
   }, [cart]);
 
+  // Calculate the total price of items in the cart
   const totalPrice = cart.reduce((total, item) => {
     const price = parseFloat(item.price) || 0; // Convert to number safely
-    const count = item.count > 0 ? item.count : 1; // Ensure count is valid
-    console.log(`Item: ${item.name}, Price: ${price}, Count: ${count}`); // Debugging log
+    const count = item.count > 0 ? item.count : 1; // Ensure valid count
     return total + price * count;
   }, 0);
 
@@ -25,15 +26,22 @@ const AddCart = () => {
       <Logobar />
 
       <div className="cart-container">
-        <h2>YOUR ORDERS</h2>
+        <h2>Your Orders</h2>
         {cart.length === 0 ? (
           <p>Cart is empty</p>
         ) : (
           cart.map((item, index) => (
-            <div key={item._id} className="cart-item">
+            <div key={`${item._id}-${index}`} className="cart-item">
               <div className="cart-item-details">
                 <p className="cart-item-name">
-                  {index + 1}. {item.name}
+                  <span className="item-name">
+                    {index + 1}. {item.name}
+                  </span>
+                  {item.options.length > 0 && (
+                    <span className="cart-item-options">
+                      ({[...new Set(item.options)].join(", ")})
+                    </span>
+                  )}
                 </p>
                 <p className="cart-item-price">{item.price}</p>
               </div>
@@ -57,7 +65,7 @@ const AddCart = () => {
         )}
         <div className="cart-footer">
           <div className="total-price">
-            <h3>Total </h3>
+            <h3>Total</h3>
             <span>{totalPrice.toFixed(2)} THB</span>
           </div>
           <Link to={"/Checkout"}>

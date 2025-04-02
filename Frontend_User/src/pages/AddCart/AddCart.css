@@ -1,7 +1,8 @@
 .cart-container {
-  height: 100vh;
+  height: auto;
   background-color: #fff4e3;
 }
+
 .cart-container h2 {
   font-size: 15px;
   font-weight: 600;
@@ -15,9 +16,10 @@
   justify-content: center;
   text-decoration: underline;
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
-  outline: none; /* Removes default focus outline */
+  user-select: none;
+  outline: none;
 }
+
 .cart-item {
   display: flex;
   justify-content: space-between;
@@ -25,55 +27,80 @@
   border: none;
   background-color: #fff4e3;
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
-  outline: none; /* Removes default focus outline */
+  user-select: none;
+  outline: none;
 }
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
 .cart-item-name {
   margin-bottom: 0px;
   overflow-y: hidden;
   background-color: #fff4e3;
-  height: 50px;
+  height: auto;
+  min-height: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
-  outline: none; /* Removes default focus outline */
+  user-select: none;
+  outline: none;
 }
+
 p.cart-item-name {
   font-size: 15px;
   font-weight: 600;
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
+
+.item-name {
+  white-space: nowrap;
+  width: 100px;
+}
+
+.cart-item-options {
+  width: 150px;
+  white-space: normal;
+  word-break: break-word;
+  display: inline-block;
+  line-height: 1.5;
+}
+
 p.cart-item-price {
   font-size: 15px;
   font-weight: 600;
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   position: relative;
   bottom: 10px;
   display: inline;
   margin-left: 50px;
   margin-bottom: 0px;
 }
-.cart-item-details {
-  display: flex;
-  flex-direction: column;
-  white-space: nowrap;
-}
+
 .item-count {
   background-color: #fff4e3;
   padding: 0px 10px 0px 10px;
 }
+
 .cart-controls {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 20px;
 }
+
 button.button_3,
 button.button_4 {
+  font-size: 20px;
   border: none;
   overflow-y: hidden;
   width: 30px;
@@ -85,7 +112,7 @@ button.button_4 {
   box-shadow: inset 1px 4px 10px rgba(0, 0, 0, 0.3),
     inset -4px -4px 10px rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
+  user-select: none;
   outline: none;
 }
 
@@ -95,6 +122,7 @@ button.button_4 {
   align-items: center;
   padding-bottom: 50px;
 }
+
 button.order-button {
   color: #000;
   font-family: poppins;
@@ -108,25 +136,28 @@ button.order-button {
   box-shadow: inset 1px 4px 10px rgba(0, 0, 0, 0.3),
     inset -4px -4px 10px rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
+  user-select: none;
   outline: none;
 }
+
 .cart-footer h3 {
   font-size: 20px;
   font-weight: 600;
   font-family: "M PLUS 1p", sans-serif;
   display: inline;
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
-  outline: none; /* Removes default focus outline */
+  user-select: none;
+  outline: none;
   overflow-y: hidden;
 }
+
 .cart-footer span {
   overflow-y: hidden;
   cursor: pointer;
-  user-select: none; /* Prevents text selection */
+  user-select: none;
   outline: none;
 }
+
 .total-price {
   width: 100px;
   height: 50px;

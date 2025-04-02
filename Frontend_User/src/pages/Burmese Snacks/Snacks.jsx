@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Contact from "../../components/Contact/Contact";
 import Cart from "../../components/Cart/Cart";
+import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
 const Snacks = () => {
   return (
@@ -14,9 +15,7 @@ const Snacks = () => {
         <Header />
         <Logobar />
         <Navbar />
-        <>
-          <h1>Snacks</h1>
-        </>
+        <FoodDisplay category="Burmese Snacks" customClass="sn-style" />
         <Cart />
         <Footer />
         <Contact />

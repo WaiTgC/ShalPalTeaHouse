@@ -12,7 +12,7 @@ const CheckOut = () => {
       <Header />
       <Logobar />
       <div className="checkout-container">
-        <img src={assets.ordercompleted} alt="checkout" />
+        <img src={assets.paper_1} alt="checkout" />
         <button className="button_1">Order Completed</button>
         <Link className="linktomain" to={"/PoppicksPage"}>
           <button className="button_2">Order More </button>

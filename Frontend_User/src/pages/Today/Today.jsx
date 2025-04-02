@@ -16,7 +16,7 @@ const Today = () => {
       <div className="today-Page-title">
         <h1>TODAY'S SPECIALS</h1>
       </div>
-      <FoodDisplay category="Today's Specials" customClass="todaystyle" />
+      <FoodDisplay category="Today's Specials" customClass="today-style" />
       <Cart />
 
       <Contact />

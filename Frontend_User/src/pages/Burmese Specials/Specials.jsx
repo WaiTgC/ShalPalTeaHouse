@@ -15,7 +15,7 @@ const Specials = () => {
         <Header />
         <Logobar />
         <Navbar />
-        <FoodDisplay category="Burmese Specials" customClass="spstyle" />
+        <FoodDisplay category="Burmese Specials" customClass="sp-style" />
 
         <Cart />
         <Footer />

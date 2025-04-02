@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Contact from "../../components/Contact/Contact";
 import Cart from "../../components/Cart/Cart";
+import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
 const Drinks = () => {
   return (
@@ -13,9 +14,7 @@ const Drinks = () => {
       <Header />
       <Logobar />
       <Navbar />
-      <>
-        <h1>Drinks</h1>
-      </>
+      <FoodDisplay category="Drinks" customClass="Drinkstyle" />
       <Cart />
       <Footer />
       <Contact />

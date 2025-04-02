@@ -14,8 +14,8 @@ const PoppicksPage = () => {
       <Header />
       <Logobar />
       <Navbar />
-      <FoodDisplay category="Popular Picks" customClass="ppstyle" />
-      <FoodDisplay category="Popular Picks" customClass="ppstyle" />
+      <FoodDisplay category="Popular Picks" customClass="pp-style" />
+
       <Cart />
       <Footer />
       <Contact />

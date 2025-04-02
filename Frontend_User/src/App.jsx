@@ -30,14 +30,6 @@ const App = () => {
           <Route path="/CheckOut" element={<CheckOut />} />
         </Routes>
       </StoreContextProvider>
-      {/* <Header />
-      <Logobar />
-      <Navbar />
-      <Routes>
-        <Route>
-
-        </Route>
-      </Routes> */}
     </div>
   );
 };

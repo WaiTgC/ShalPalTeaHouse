@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Contact from "../../components/Contact/Contact";
 import Cart from "../../components/Cart/Cart";
+import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 
 const Salads = () => {
   return (
@@ -14,9 +15,7 @@ const Salads = () => {
         <Header />
         <Logobar />
         <Navbar />
-        <>
-          <h1>Salads</h1>
-        </>
+        <FoodDisplay category="Burmese Salads" customClass="sal-style" />
         <Cart />
         <Footer />
         <Contact />
