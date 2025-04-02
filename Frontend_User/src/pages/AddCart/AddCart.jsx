@@ -27,6 +27,10 @@ const AddCart = () => {
 
       <div className="cart-container">
         <h2>Your Orders</h2>
+        <p className="items-quantity">
+          <span>Items</span>
+          <span>Quantity</span>
+        </p>
         {cart.length === 0 ? (
           <p>Cart is empty</p>
         ) : (

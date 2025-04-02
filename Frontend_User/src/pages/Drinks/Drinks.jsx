@@ -14,7 +14,7 @@ const Drinks = () => {
       <Header />
       <Logobar />
       <Navbar />
-      <FoodDisplay category="Drinks" customClass="Drinkstyle" />
+      <FoodDisplay category="Drinks" customClass="dr-style" />
       <Cart />
       <Footer />
       <Contact />
