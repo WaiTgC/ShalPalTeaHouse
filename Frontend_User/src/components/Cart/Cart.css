@@ -16,8 +16,8 @@
 
 .cart-count {
   position: fixed;
-  bottom: 160px;
-  right: 15px;
+  bottom: 155px;
+  right: 10px;
   background-color: red;
   color: white;
   border-radius: 50%;

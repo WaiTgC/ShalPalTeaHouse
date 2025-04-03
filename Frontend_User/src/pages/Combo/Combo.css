@@ -123,10 +123,10 @@
     position: absolute;
     z-index: auto;
     background-color: #fff4e3;
-    transform: scale(2) translate(-10px, -14%);
+    transform: scale(2) translate(-10px, -16%);
   }
   .combostyle .foodItem:nth-child(even) .foodimgcontainer {
-    transform: scale(2) translate(0px, -8%);
+    transform: scale(2) translate(0px, -9%);
     margin-bottom: 22px;
     margin-left: 53% !important; /* Reset margin for mobile */
     z-index: auto;
