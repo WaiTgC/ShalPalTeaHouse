@@ -58,7 +58,7 @@ p.cart-item-name {
   font-family: "Poppins", sans-serif;
   margin-left: 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 span.item-name {
@@ -72,6 +72,7 @@ span.cart-item-options {
   word-break: break-word;
   display: inline-block;
   line-height: 1.5;
+  margin-left: 15px;
 }
 
 p.cart-item-price {
@@ -83,6 +84,7 @@ p.cart-item-price {
   display: inline;
   margin-left: 50px;
   margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 .item-count {
@@ -95,6 +97,7 @@ p.cart-item-price {
   align-items: center;
   justify-content: center;
   padding-right: 20px;
+  text-decoration: none;
 }
 
 button.button_3,
@@ -113,6 +116,7 @@ button.button_4 {
   cursor: pointer;
   user-select: none;
   outline: none;
+  text-decoration: none;
 }
 
 .cart-footer {

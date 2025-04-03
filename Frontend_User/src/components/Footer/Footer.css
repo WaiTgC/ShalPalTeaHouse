@@ -91,7 +91,7 @@ a.linkcombo:active {
     position: relative;
     border-radius: 30px !important;
     height: 46px;
-    width: 100%;
+    width: auto;
     font-size: clamp(10px, 2vw, 100px);
     white-space: nowrap;
     margin: 0px 10px;
@@ -135,5 +135,18 @@ a.linkcombo:active {
   a.linkcombo:active {
     text-decoration: none; /* Ensure no underline in any state */
     color: #333; /* Maintain consistent text color */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  button.today {
+    padding: 0px 30px !important;
+    margin-right: 10px !important;
+    text-decoration: none; /* Ensure no underline */
+  }
+
+  button.combo {
+    padding: 0px 40px !important;
+    text-decoration: none; /* Ensure no underline */
   }
 }

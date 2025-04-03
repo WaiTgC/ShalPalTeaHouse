@@ -72,3 +72,11 @@
     margin-left: 0px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .social-contact {
+    transform: scale(0.6);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
