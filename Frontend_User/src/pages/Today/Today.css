@@ -1,5 +1,5 @@
 .today-Page {
-  height: auto;
+  height: 100vh auto;
 }
 .today-Page h1 {
   font-size: 15px;
@@ -17,8 +17,9 @@
   outline: none;
 }
 
-.todaystyle .foodItem {
+.today-style .foodItem {
   margin-top: 42px;
+  margin-left: 10px;
   width: 80%;
   padding: 10px !important;
   background-color: #fff4e3;
@@ -26,48 +27,48 @@
   border-radius: 0px;
 }
 
-.todaystyle .foodItem:hover {
+.today-style .foodItem:hover {
   filter: none !important;
   background-color: inherit !important;
   cursor: default !important;
 }
 
-.todaystyle .foodItem .foodimgcontainer {
+.today-style .foodItem .foodimgcontainer {
   position: absolute;
   z-index: auto;
   transform: translate(-60%, -30%);
   background-color: #fff4e3;
   padding: 10px !important;
 }
-.todaystyle .foodItem .foodinfo {
+.today-style .foodItem .foodinfo {
   font-family: M PLUS 1p, sans-serif;
 }
 
-.todaystyle .foodItem:nth-child(even) .foodinfo {
+.today-style .foodItem:nth-child(even) .foodinfo {
   background-color: #fff4e3 !important;
   transform: translate(-10%, 0%);
 }
-.todaystyle .foodItem:nth-child(even) .price-addtocart {
+.today-style .foodItem:nth-child(even) .price-addtocart {
   position: relative;
   background-color: #fff4e3 !important;
   transform: translate(-160%, 0%);
 }
 
-.todaystyle .foodItem:nth-child(even) .foodimgcontainer {
+.today-style .foodItem:nth-child(even) .foodimgcontainer {
   position: absolute;
   margin-left: 700px !important;
   background-color: #fff4e3 !important;
 }
 
 @media only screen and (max-width: 885px) {
-  .todaystyle .foodItem .foodimgcontainer {
+  .today-style .foodItem .foodimgcontainer {
     position: absolute;
     z-index: auto;
     background-color: #fff4e3;
     padding: 10px !important;
   }
 
-  .todaystyle .foodItem:nth-child(even) .foodimgcontainer {
+  .today-style .foodItem:nth-child(even) .foodimgcontainer {
     margin-left: 78% !important; /* Reset margin for mobile */
     z-index: auto;
     position: absolute;
