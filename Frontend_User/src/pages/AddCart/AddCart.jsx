@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { StoreContext } from "../../context/StoreContextProvider";
 import "./AddCart.css";
 import Header from "../../components/header/Header";
@@ -9,9 +9,18 @@ import { Link } from "react-router-dom";
 const AddCart = () => {
   const { cart, updateCartItem } = useContext(StoreContext);
 
+  // State to store additional notes for the entire order
+  const [orderNotes, setOrderNotes] = useState("");
+
   useEffect(() => {
     console.log("Updated Cart:", cart); // Debugging cart updates
-  }, [cart]);
+    console.log("Order Notes:", orderNotes); // Debugging notes
+  }, [cart, orderNotes]);
+
+  // Handle changes to the order notes input
+  const handleOrderNotesChange = (e) => {
+    setOrderNotes(e.target.value);
+  };
 
   // Calculate the total price of items in the cart
   const totalPrice = cart.reduce((total, item) => {
@@ -49,6 +58,9 @@ const AddCart = () => {
                 </p>
                 <p className="cart-item-price">{item.price}</p>
               </div>
+              <div className="adttional-input">
+                {/* Removed the per-item input box */}
+              </div>
               <div className="cart-controls">
                 <button
                   className="button_3"
@@ -67,6 +79,18 @@ const AddCart = () => {
             </div>
           ))
         )}
+
+        {/* Add the input box for the entire order above cart-footer */}
+        <div className="order-notes">
+          <input
+            type="text"
+            placeholder="Leave your addtional notes for your orders here ....."
+            value={orderNotes}
+            onChange={handleOrderNotesChange}
+            className="order-notes-input"
+          />
+        </div>
+
         <div className="cart-footer">
           <div className="total-price">
             <h3>Total</h3>
