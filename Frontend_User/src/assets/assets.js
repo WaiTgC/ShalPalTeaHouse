@@ -48,9 +48,9 @@ import drink_6 from "./drink_(6).svg";
 import drink_7 from "./drink_(7).svg";
 import drink_8 from "./drink_(8).svg";
 
-import set_A from "./set a 1.svg";
-import set_B from "./set b 1.svg";
-import set_C from "./set c 1.svg";
+import set_A from "./set a.svg";
+import set_B from "./set b.svg";
+import set_C from "./set c.svg";
 
 export const assets = {
   logo,

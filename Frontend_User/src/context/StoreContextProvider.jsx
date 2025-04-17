@@ -43,9 +43,14 @@ const StoreContextProvider = ({ children }) => {
     );
   };
 
+  // Function to reset the cart
+  const resetCart = () => {
+    setCart([]); // Reset the cart to an empty array
+  };
+
   return (
     <StoreContext.Provider
-      value={{ food_list, cart, addToCart, updateCartItem }}
+      value={{ food_list, cart, addToCart, updateCartItem, resetCart }} // Add resetCart to the context value
     >
       {children}
     </StoreContext.Provider>

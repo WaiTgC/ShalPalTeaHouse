@@ -7,27 +7,29 @@ import Contact from "../../components/Contact/Contact";
 import { Link } from "react-router-dom";
 
 const AddCart = () => {
-  const { cart, updateCartItem } = useContext(StoreContext);
+  const { cart, updateCartItem, resetCart } = useContext(StoreContext); // Add resetCart to the context
 
-  // State to store additional notes for the entire order
   const [orderNotes, setOrderNotes] = useState("");
 
   useEffect(() => {
-    console.log("Updated Cart:", cart); // Debugging cart updates
-    console.log("Order Notes:", orderNotes); // Debugging notes
+    console.log("Updated Cart:", cart);
+    console.log("Order Notes:", orderNotes);
   }, [cart, orderNotes]);
 
-  // Handle changes to the order notes input
   const handleOrderNotesChange = (e) => {
     setOrderNotes(e.target.value);
   };
 
-  // Calculate the total price of items in the cart
   const totalPrice = cart.reduce((total, item) => {
-    const price = parseFloat(item.price) || 0; // Convert to number safely
-    const count = item.count > 0 ? item.count : 1; // Ensure valid count
+    const price = parseFloat(item.price) || 0;
+    const count = item.count > 0 ? item.count : 1;
     return total + price * count;
   }, 0);
+
+  // Handle the "Order Now" button click
+  const handleOrderNow = () => {
+    resetCart(); // Reset the cart when "Order Now" is clicked
+  };
 
   return (
     <div className="AddCart-Page">
@@ -58,9 +60,7 @@ const AddCart = () => {
                 </p>
                 <p className="cart-item-price">{item.price}</p>
               </div>
-              <div className="adttional-input">
-                {/* Removed the per-item input box */}
-              </div>
+              <div className="adttional-input"></div>
               <div className="cart-controls">
                 <button
                   className="button_3"
@@ -80,7 +80,6 @@ const AddCart = () => {
           ))
         )}
 
-        {/* Add the input box for the entire order above cart-footer */}
         <div className="order-notes">
           <input
             type="text"
@@ -96,8 +95,12 @@ const AddCart = () => {
             <h3>Total</h3>
             <span>{totalPrice.toFixed(2)} THB</span>
           </div>
-          <Link to={"/Checkout"}>
-            <button className="order-button" disabled={cart.length === 0}>
+          <Link to="/Checkout">
+            <button
+              className="order-button"
+              disabled={cart.length === 0}
+              onClick={handleOrderNow} // Call handleOrderNow to reset the cart
+            >
               Order Now
             </button>
           </Link>
